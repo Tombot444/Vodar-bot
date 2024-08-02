@@ -13,9 +13,9 @@ prefix: true,
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("bossbou") || react.includes("boserbouk") || react.includes("gf")) {
+	if(react.includes("bosbou") || react.includes("boserbouk") || react.includes("bosgf")) {
 		var msg = {
-				body: " Boss. SK SHAKIL(TOM)আমার ভাবি,😌😌মিস্টি😌😌"
+				body: " Boss. SK SHAKIL(TOM)এর বউ।আমার ভাবি,😌😌মিস্টি😌😌"
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("", event.messageID, (err) => {}, true)
